@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Web and Mobile Developer - Portfolio - RR</title>
-        <meta name="description" content="">
+        <meta name="description" content="Web developer and Mobile application developer interested to take new challenges and creative projects. Will develop flawless projects with search ingine optimization and accessabitly features.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Developer, Web, Mobile, Web Developer, Mobile Developer, Creative, Website designer, Designer,  Development, Portfolio, Front-End, Back-End" >
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -16,12 +17,12 @@
             <div class="overlay">
             <h1>Raghul Ragavan</h1>
             <h2>Application Developer</h2>
-            <button id="get-in-touch" >Get in touch</button>
+            <a id="get-in-touch" href="#formContainer" aria-label="Get in touch">Get in touch</a>
             </div>
             
         </div>
         <div id="about-me-section">
-            <h3 id="about-me-header">
+            <h3 aria-labelledby="About Me" id="about-me-header">
                 About Me
             </h3>
             <div id="about-me-content">
@@ -29,14 +30,21 @@
                 <p class="first">I work on builds and maintenance for a variety of client sites for my job during the day,
                     and at night you can also find me doing some freelance work on the side taking on my clients' 
                     sites (made in a variety of site builders/platforms), giving them a design-focused revamp, 
-                    and adding some custom features and functionality to make them shine!</p>
+                    and adding some custom features and functionality to make them shine!
+                    <br>
+                    <br>
+                    I've always been drawn to both the creative and analytical side of development, so I'm so thankful to be able to do 
+                    both with the foundation I built during bootcamp.
+                </p>
                  
                  <p class="second">I've always been drawn to both the creative and analytical side of development, so I'm so thankful to be able to do 
                     both with the foundation I built during bootcamp.</p>
 
+                    <img src="./images/potrait.png" alt="potrait" id="potrait" />
+
                     
                  
-                 <span id="more-link">more</span>
+                 <!-- <span id="more-link">more</span> -->
                 
                  <div id="exp-container">
                     <p id="experience">
@@ -51,7 +59,7 @@
             </div>
         </div>
         <div id="skills-section">
-            <h3 id="skills-header">
+            <h3 aria-labelledby="Skills"  id="skills-header">
                Skills
             </h3>
             <div id="skills-content"> 
@@ -86,7 +94,7 @@
         </div>
 
         <div id="projects-worked-section">
-            <h3 id="projects-worked-header">
+            <h3 aria-labelledby="Projects" id="projects-worked-header">
                 Projects
             </h3>
 
@@ -114,7 +122,7 @@
             </div>
             
         </div>
-        <div class="formContainer">
+        <div id="formContainer">
             <h3>Contact Me</h3>
             <hr />
             <h5>I'd love to hear from you! Leave a message below and I will get back to you shortly.</h5>
@@ -123,21 +131,21 @@
     
                 <div class="form-sub">
                     <label for="fullName">Name <sup>*</sup></label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" size="30" required>
+                    <input type="text" id="fullName" name="fullName" aria-label="full name" placeholder="Full Name" size="30" required>
                 </div>
-    
+                
     
                 <div class="form-sub">
                     <label for="emailAddress">Email</label>
-                    <input type="text" id="emailAddress" name="emailAddress" placeholder="Email Address" size="30">
+                    <input type="text" id="emailAddress" name="emailAddress" aria-label="email address" placeholder="Email Address" size="30">
                 </div>
     
                 <div class="form-sub">
                     <label>Message <sup>*</sup></label>
-                    <textarea id="message" name="message" rows="4" cols="35" placeholder="Write you message to me .!!!" required></textarea>
+                    <textarea id="message" name="message" rows="4" cols="35" aria-label="write your message" placeholder="Write you message to me .!!!" required></textarea>
                 </div>
     
-                <button id="submitBtn" class="formButton">Submit</button>
+                <button id="submitBtn" class="formButton" aria-label="send email">Submit</button>
             </form>
             </div>
             <div id="external-links">

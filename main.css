@@ -6,11 +6,64 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 nav {
     height: 56vw;
     background-color: rgba(0, 0, 0, 0.09);
 }
+
+#landing-section {
+    background: url("./images/potrait-bg.png") no-repeat 10px -17px;   
+    animation: animatedBackground 2s linear;
+    animation-delay: 0s;
+    background-size: cover;
+    height: 160vw;
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 90% 0;
+    }
+    to {
+      background-position: 80% 0;
+    }
+  }
+
+#landing-section h1 {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 68vw;
+    padding-left: 10vw;
+    color: white;
+    font-size: calc(12px + 6vw);
+    text-shadow: -1px -1px rgba(0, 0, 0, 1), 1px 1px rgba(0, 0, 0, 1);
+    animation: animatedBackground-land 2s ease-in;
+    animation-delay: 0s;
+}
+
+#landing-section h2 {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10vw;
+    color: white;
+    font-weight: 400;
+    font-size: calc(12px + 2vw);
+    text-shadow: -1px -1px rgba(0, 0, 0, 1), 1px 1px rgba(0, 0, 0, 1);
+    animation: animatedBackground-land 2s linear;
+    animation-delay: 0s;
+}
+
+@keyframes animatedBackground-land {
+    from {
+      transform: translate(-20px) ;
+    }
+    to {
+      transform: translate(10px);
+    }
+  }
+
 #get-in-touch {
     display: block;
     background-color: #ffea7c;
@@ -21,32 +74,21 @@ nav {
     font-family: 'Poppins';
     margin: 5vw 10vw;
     font-size: calc(12px + 1vw);
+    cursor: pointer;
+    width: 24vw;
+    text-decoration: none;
+    animation: animatedBackground-land 2s linear;
+    animation-delay: 0s;
 }
 
-#landing-section {
-    background: url("./images/potrait-bg.png") no-repeat 10px -17px;
-    background-size: cover;
-    height: 160vw;
-}
-
-#landing-section h1 {
-    font-family: 'Poppins', sans-serif;
-    padding-top: 68vw;
-    padding-left: 10vw;
-    color: white;
-    font-size: calc(12px + 6vw);
-    text-shadow: -1px -1px rgba(0, 0, 0, 1), 1px 1px rgba(0, 0, 0, 1);
-}
-
-#landing-section h2 {
-    font-family: 'Poppins', sans-serif;
-    padding: 0 10vw;
-    color: white;
-    font-weight: 400;
-    font-size: calc(12px + 2vw);
-    text-shadow: -1px -1px rgba(0, 0, 0, 1), 1px 1px rgba(0, 0, 0, 1);
-}
-
+@keyframes animatedBackground-land {
+    from {
+      transform: translate(-20px) ;
+    }
+    to {
+      transform: translate(10px);
+    }
+  }
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.09);
@@ -78,6 +120,10 @@ nav {
 .first {
     margin-bottom: 10px;
     font-size: calc(12px + 1vw);
+}
+
+#potrait {
+    display: none;
 }
 
 .second {
@@ -136,7 +182,6 @@ nav {
     text-align: center;
 }
 
-#skills-header h2 {}
 
 #skills-content {
     padding-top: 10vw;
@@ -254,7 +299,6 @@ nav {
     color: white;
 }
 
-#left-content {}
 
 #left-content h3 {
     color: white;
@@ -322,17 +366,17 @@ nav {
     padding: 0 20px;
 }
 
-.formContainer {
+#formContainer {
     padding: 16vw 9vw 0vw 9vw;
 }
 
-.formContainer h3 {
+#formContainer h3 {
     font-family: 'Poppins';
     text-align: center;
     font-size: calc(12px + 4vw);
 }
 
-.formContainer h5 {
+#formContainer h5 {
     font-family: 'Poppins', 'Times New Roman', Times, serif;
     font-weight: lighter;
     font-size: calc(12px + 1vw);
@@ -343,6 +387,7 @@ nav {
 input {
     height: 10vw;
     flex-basis: 100%;
+    border-radius: 20px;
 }
 
 hr {
@@ -358,6 +403,8 @@ hr {
 #message {
     width: 100%;
     height: 46vw;
+    border-radius: 20px;
+    border: 2px solid;
 }
 
 .formButton {
@@ -423,7 +470,6 @@ footer {
     margin-bottom: 22px;
 }
 
-#extenal-links div {}
 
 #span1 {
     background: url('./images/linkedin.png')no-repeat;
@@ -461,6 +507,7 @@ nav {
     padding: 1vw 3vw;
     margin: 3vw 10vw;
     font-size: calc(3px + 1vw);
+    width: 8vw;
 }
 
 #landing-section {
@@ -494,7 +541,7 @@ nav {
 /* about me section */
 
 #about-me-section {
-    padding: 6vw 9vw 5vw 6vw;
+    padding: 6vw 5vw 5vw 6vw;
     background: #110e16;
 }
 
@@ -511,8 +558,10 @@ nav {
 
 .first {
     margin-bottom: 10px;
-    font-size: calc(7px + 1vw);
-    margin-right: 75vh;
+    font-size: calc(6px + 1vw);
+}
+#potrait {
+    display: none;
 }
 
 .second {
@@ -526,13 +575,11 @@ nav {
 
 #exp-container {
     display: flex;
-    margin: 19px auto;
+    margin: 42px auto;
     justify-content: space-between;
     width: 50%;
 }
 
-#experience {
-}
 
 #experience span {
     font-size: calc(12px + 4vw);
@@ -562,7 +609,6 @@ nav {
     text-align: initial;
 }
 
-#skills-header h2 {}
 
 #skills-content {padding-top: 4vw;display: flex;}
 
@@ -570,10 +616,13 @@ nav {
 
 #known-skills span {
     font-family: 'Russo One';
+    cursor: pointer;
 }
 
 #known-skills span:hover {
     color: #99b0d2;
+    transform: scale(1.1);
+
 }
 
 #known-skills span:nth-child(1) {
@@ -648,15 +697,13 @@ nav {
 
 #expertise li {
     padding: 0;
-    background-position: 1vw 5px;
+    background-position: 0vw 2px;
 }
 
 #expertise p {
     font-size: calc(12px + 1vw);
     padding-left: 4vw;
 }
-
-
 
 
 
@@ -669,7 +716,6 @@ nav {
     text-align: initial;
 }
 
-#left-content {}
 
 .left-content-p {
     display: flex;
@@ -702,7 +748,6 @@ nav {
     margin: 6vw auto;
 }
 
-#left-content-1 {}
 
 #left-content-1 h3 {
     margin-top: 5vw;
@@ -731,16 +776,16 @@ nav {
     margin-top: 2vw;
 }
 
-.formContainer {
+#formContainer {
     padding: 6vw 9vw 0vw 9vw;
 }
 
-.formContainer h3 {
+#formContainer h3 {
     text-align: initial;
     font-size: calc(12px + 2vw);
 }
 
-.formContainer h5 {
+#formContainer h5 {
     font-size: calc(12px + 1vw);
     margin: 3vw 0 6vw 0;
     text-align: center;
@@ -814,44 +859,10 @@ textarea::placeholder {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-footer {
-    font-size: calc(8px + 1vw);
-    font-family: 'Poppins';
-    background-color: black;
-    color: white;
-    padding: 34px;
-}
-
 #external-links {
-    height: 100px;
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 22px;
     width: 50%;
     margin: 35px auto;
-}
-
-#extenal-links div {}
-
-#span1 {
-    background: url('./images/linkedin.png')no-repeat;
-    height: 40px;
-    width: 40px;
-    background-size: cover;
-}
-
-#span2 {
-    background: url('./images/instagram.png')no-repeat;
-    height: 40px;
-    width: 40px;
-    background-size: cover;
-}
-
-#span3 {
-    background: url('./images/github.png')no-repeat;
-    height: 40px;
-    width: 40px;
-    background-size: cover;
-}
 }
