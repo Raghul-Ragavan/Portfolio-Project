@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Russo+One&display=swap');
+/* font-family: 'Poppins', sans-serif */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    height: 69px;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+#landing-section {
+    background: url("./images/potrait-bg.png") no-repeat 10px -17px;
+    background-size: cover;
+    height: 160vw;
+}
+
+#landing-section h1 {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 68vw;
+    padding-left: 10vw;
+    color: white;
+    font-size: calc(12px + 6vw);
+    text-shadow: -1px -1px rgba(0, 0, 0, 1), 1px 1px rgba(0, 0, 0, 1);
+}
+
+#landing-section h2 {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10vw;
+    color: white;
+    font-weight: 400;
+    font-size: calc(12px + 2vw);
+    text-shadow: -1px -1px rgba(0, 0, 0, 1), 1px 1px rgba(0, 0, 0, 1);
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.09);
+    height: 100%;
+}
+
+
+/* about me section */
+
+#about-me-section {
+    padding: 16vw 9vw;
+    background: #110e16;
+}
+
+#about-me-header {
+    font-family: 'Poppins';
+    font-size: calc(12px + 4vw);
+    text-align: center;
+    color: white;
+}
+
+#about-me-content {
+    color: white;
+    font-family: 'Poppins';
+    margin-top: 32px;
+    font-size: calc(12px + 0.4vw);
+}
+
+.first {
+    margin-bottom: 10px;
+}
+
+.second {
+    display: none;
+}
+
+#more-link {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#exp-container {
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-between;
+    width: 82%;
+}
+
+#experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+
+#experience span {
+    font-size: calc(12px + 8vw);
+    margin-right: 10px;
+    color: #ffea7c;
+}
+
+#clients-served {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+
+#clients-served span {
+    font-size: calc(12px + 8vw);
+    margin-right: 10px;
+    color: #ffea7c;
+}
+
+
+
+/* skills section */
+
+#skills-section {
+    padding: 16vw 9vw;
+}
+
+#skills-header {
+    font-family: 'Poppins';
+    font-size: calc(12px + 4vw);
+    text-align: center;
+    background: url('./images/code.png') no-repeat;
+    background-size: 31px;
+    background-position: 92px 6px;
+}
+
+#skills-header h2 {}
+
+#skills-content {
+    padding-top: 10vw;
+}
+
+#known-skills {}
+
+#known-skills span {
+    font-family: 'Russo One';
+}
+
+#known-skills span:hover {
+    color: #99b0d2;
+}
+
+#known-skills span:nth-child(1) {
+    font-size: 139px;
+    color: #1d3654;
+}
+
+#known-skills span:nth-child(2) {
+    font-size: 44px;
+    padding: 10px 24px;
+}
+
+#known-skills span:nth-child(3) {
+    font-size: 28px;
+}
+
+#known-skills span:nth-child(4) {
+    font-size: 97px;
+    padding: 2px;
+    color: #ffea7c;
+}
+
+#known-skills span:nth-child(5) {
+    padding: 10px;
+    font-size: 23px;
+}
+
+#known-skills span:nth-child(6) {
+    font-size: 51px;
+}
+
+#known-skills span:nth-child(7) {
+    display: inline-block;
+    transform: rotate(90deg);
+    font-size: 28px;
+    padding: 32px 0px;
+}
+
+#known-skills span:nth-child(8) {
+    font-size: 39px;
+    padding-top: 5px;
+    color: #623625;
+}
+
+#known-skills span:nth-child(9) {
+    font-size: 88px;
+}
+
+#known-skills span:nth-child(10) {
+    padding: 3px 25px;
+    font-size: 30px;
+    display: inline-block;
+}
+
+#known-skills span:nth-child(11) {
+    font-size: 26px;
+    padding: 15px;
+}
+
+#known-skills span:nth-child(12) {
+    display: inline-block;
+    font-size: 45px;
+    padding-left: 1px;
+    color: #99b0d2;
+}
+
+#expertise {}
+
+#expertise span {}
