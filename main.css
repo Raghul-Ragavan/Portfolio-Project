@@ -8,8 +8,19 @@
 
 
 nav {
-    height: 69px;
+    height: 56vw;
     background-color: rgba(0, 0, 0, 0.09);
+}
+#get-in-touch {
+    display: block;
+    background-color: #ffea7c;
+    color: black;
+    border: none;
+    border-radius: 28px;
+    padding: 3vw 8vw;
+    font-family: 'Poppins';
+    margin: 5vw 10vw;
+    font-size: calc(12px + 1vw);
 }
 
 #landing-section {
@@ -66,6 +77,7 @@ nav {
 
 .first {
     margin-bottom: 10px;
+    font-size: calc(12px + 1vw);
 }
 
 .second {
@@ -122,9 +134,6 @@ nav {
     font-family: 'Poppins';
     font-size: calc(12px + 4vw);
     text-align: center;
-    background: url('./images/code.png') no-repeat;
-    background-size: 31px;
-    background-position: 92px 6px;
 }
 
 #skills-header h2 {}
@@ -144,65 +153,65 @@ nav {
 }
 
 #known-skills span:nth-child(1) {
-    font-size: 139px;
+    font-size: calc(12px + 31vw);
     color: #1d3654;
 }
 
 #known-skills span:nth-child(2) {
-    font-size: 44px;
-    padding: 10px 24px;
+    font-size: calc(12px + 9vw);
+    padding: 0px 6vw;
 }
 
 #known-skills span:nth-child(3) {
-    font-size: 28px;
+    font-size: calc(12px + 4vw);
 }
 
 #known-skills span:nth-child(4) {
-    font-size: 97px;
+    font-size: calc(12px + 20vw);
     padding: 2px;
     color: #ffea7c;
 }
 
 #known-skills span:nth-child(5) {
-    padding: 10px;
-    font-size: 23px;
+    padding: 2vw;
+    font-size: calc(12px + 2vw);
 }
 
 #known-skills span:nth-child(6) {
-    font-size: 51px;
+    font-size: calc(12px + 9vw);
 }
 
 #known-skills span:nth-child(7) {
     display: inline-block;
     transform: rotate(90deg);
-    font-size: 28px;
-    padding: 32px 0px;
+    font-size: calc(12px + 5vw);
+    padding: 5vw 0px;
 }
 
 #known-skills span:nth-child(8) {
-    font-size: 39px;
+    font-size: calc(12px + 8vw);
     padding-top: 5px;
     color: #623625;
 }
 
 #known-skills span:nth-child(9) {
-    font-size: 88px;
+    font-size: calc(12px + 18vw);
 }
 
 #known-skills span:nth-child(10) {
-    padding: 3px 25px;
-    font-size: 30px;
+    padding: 0px 6vw;
+    font-size: calc(12px + 4vw);
     display: inline-block;
 }
 
 #known-skills span:nth-child(11) {
-    font-size: 26px;
-    padding: 15px;
+    font-size: calc(12px + 2vw);
+    padding: 4vw;
 }
 
 #known-skills span:nth-child(12) {
     display: inline-block;
-    font-size: 45px;
+    font-size: calc(12px + 8vw);
     padding-left: 1px;
     color: #99b0d2;
 }
@@ -220,13 +229,13 @@ nav {
     padding-bottom: 28px;
     background: url(./images/code.png) no-repeat;
     background-size: 30px;
-    background-position: 0px 0px;
+    background-position: -11px 0px;
 }
 
 #expertise p {
     font-weight: 500;
     font-size: calc(12px + 2vw);
-    padding-left: 40px;
+    padding-left: 7vw;
 }
 
 
@@ -252,6 +261,7 @@ nav {
     font-family: 'Poppins';
     text-align: center;
     margin-top: 7vw;
+    font-size: calc(12px + 10vw);
 }
 
 #left-content p {
@@ -260,6 +270,7 @@ nav {
     margin-top: 10vw;
     text-align: center;
     padding: 0 20px;
+    font-size: calc(12px + 1vw);
 }
 
 #right-content {}
@@ -276,7 +287,8 @@ nav {
     color: white;
     font-family: 'Poppins';
     text-align: center;
-    margin-top: 7vw;
+    margin-top: 20vw;
+    font-size: calc(12px + 10vw);
 }
 
 #left-content-1 p {
@@ -285,6 +297,7 @@ nav {
     margin-top: 10vw;
     text-align: center;
     padding: 0 20px;
+    font-size: calc(12px + 1vw);
 }
 
 #right-content-1 {}
@@ -294,13 +307,16 @@ nav {
     margin-top: 15vw;
     padding: 0 20px;
 }
+
 #image-2 {
     width: 85%;
     margin-top: 15vw;
     padding: 0 20px;
 }
 
-.formContainer {padding: 16vw 9vw;}
+.formContainer {
+    padding: 16vw 9vw 0vw 9vw;
+}
 
 .formContainer h3 {
     font-family: 'Poppins';
@@ -311,7 +327,7 @@ nav {
 .formContainer h5 {
     font-family: 'Poppins', 'Times New Roman', Times, serif;
     font-weight: lighter;
-    font-size: small;
+    font-size: calc(12px + 1vw);
     margin: 11vw 0;
     text-align: center;
 }
@@ -323,13 +339,14 @@ input {
 
 hr {
     border: 0;
-    clear:both;
-    display:block;
+    clear: both;
+    display: block;
     width: 96%;
-    background-color:gray;
+    background-color: gray;
     height: 1px;
     display: none;
 }
+
 #message {
     width: 100%;
     height: 46vw;
@@ -337,13 +354,14 @@ hr {
 
 .formButton {
     display: block;
-    margin: 47px auto;
+    margin: 10vw auto;
     background-color: #6EA1CA;
     color: white;
     border: none;
     border-radius: 28px;
-    padding: 18px 100px;
+    padding: 4vw 17vw;
     font-family: 'Poppins';
+    font-size: calc(12px + 1vw);
 }
 
 
@@ -354,11 +372,11 @@ sup {
 }
 
 .radio {
-    flex-basis: 15%!important;
+    flex-basis: 15% !important;
     margin-top: 4px;
 }
 
-.form-sub{
+.form-sub {
     display: flex;
     align-items: center;
     margin-bottom: 46px;
@@ -370,11 +388,50 @@ sup {
     display: none;
 }
 
-input::placeholder{
+input::placeholder {
     padding: 10px;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    font-size: calc(8px + 1vw);
+    font-family: 'Poppins';
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+#external-links {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+#extenal-links div {}
+
+#span1 {
+    background: url('./images/linkedin.png')no-repeat;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+}
+
+#span2 {
+    background: url('./images/instagram.png')no-repeat;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+}
+
+#span3 {
+    background: url('./images/github.png')no-repeat;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
 }
