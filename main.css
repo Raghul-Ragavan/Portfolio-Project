@@ -207,6 +207,20 @@ nav {
     color: #99b0d2;
 }
 
-#expertise {}
+#expertise {
+    padding-top: 27vw;
+    list-style: none;
+    font-family: 'Poppins';
+}
 
-#expertise span {}
+#expertise li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 28px;
+}
+
+#expertise p {
+    font-weight: 500;
+    font-size: calc(12px + 2vw);
+}
